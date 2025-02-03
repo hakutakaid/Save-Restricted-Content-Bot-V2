@@ -2,6 +2,9 @@
 # Note if you are trying to deploy on vps then directly fill values in ("")
 
 from os import getenv
+from dotenv import load_dotenv
+
+load_dotenv()
 
 API_ID = int(getenv("API_ID", ""))
 API_HASH = getenv("API_HASH", "")
